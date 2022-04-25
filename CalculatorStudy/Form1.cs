@@ -45,93 +45,183 @@ namespace CalculatorStudy {
 
 
       private void btnNumber0_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 0;
-         } else {
+         } else if (_operator == 0 && _num1 !=0){
+            _num1 = _num1 * 10;
+         } else if (_operator != 0 && _num2 == 0){
             _num2 = 0;
+         } else if (_operator!=0 && _num2 != 0) {
+            _num2 = _num2 * 10;
          }
-         lblResult.Text = "0";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber1_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 1;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 1;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 1;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 1;
          }
-         lblResult.Text = "1";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber2_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 2;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 2;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 2;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 2;
          }
-         lblResult.Text = "2";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber3_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 3;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 3;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 3;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 3;
          }
-         lblResult.Text = "3";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber4_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 4;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 4;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 4;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 4;
          }
-         lblResult.Text = "4";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber5_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 5;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 5;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 5;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 5;
          }
-         lblResult.Text = "5";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber6_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 6;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 6;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 6;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 6;
          }
-         lblResult.Text = "6";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber7_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 7;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 7;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 7;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 7;
          }
-         lblResult.Text = "7";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber8_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 8;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 8;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 8;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 8;
          }
-         lblResult.Text = "8";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumber9_Click(object sender, EventArgs e) {
-         if (_operator == 0) {
+         if (_operator == 0 && _num1 == 0) {
             _num1 = 9;
-         } else {
+         } else if (_operator == 0 && _num1 != 0) {
+            _num1 = _num1 * 10 + 9;
+         } else if (_operator != 0 && _num2 == 0) {
             _num2 = 9;
+         } else if (_operator != 0 && _num2 != 0) {
+            _num2 = _num2 * 10 + 9;
          }
-         lblResult.Text = "9";
+
+         if (_operator == 0) {
+            lblResult.Text = _num1.ToString();
+         } else {
+            lblResult.Text = _num2.ToString();
+         }
       }
 
       private void btnNumberPlus_Click(object sender, EventArgs e) {
