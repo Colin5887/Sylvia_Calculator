@@ -167,5 +167,12 @@ namespace CalculatorStudy {
          }
          lblResult.Text = operationResult.ToString();
       }
+
+      private void btnClear_Click(object sender, EventArgs e) {
+         _num1 = 0;
+         _num2 = 0;
+         _operator = 0;
+         lblResult.Text = " ";
+      }
    }
 }
